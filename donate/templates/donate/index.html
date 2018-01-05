@@ -1,0 +1,175 @@
+{% extends 'donate/base.html' %}
+
+{% load staticfiles %}
+{% block body %}
+
+<!------------------------- Header ------------------------------------>
+
+      <div id="header" class="header">
+          <div class="container">
+              <div class="row">
+                  <div class="col-lg-6 col-md-6 col-xs-12 wow bounceInLeft" data-wow-delay="0.3s">
+                      <h1>Donate Your Books !</h1>
+                      <p>Participate on the first ever book donating platform in Nepal and support them who want to pursue Higher education. This could be your promising step towards building a well educated nation. </p>
+                      <button class="btn btn-md btn-danger"><a href="{% url 'donate_book' %}">Donate Now</a> </button>
+                      <button class="btn btn-md btn-warning"><a href="#search">Search for Books</a></button>
+                  </div>
+                  <div class="col-lg-6 col-md-6" >
+                      <img src="{% static 'donate/images/Schoolboy_Studying-512.png' %}" alt="">
+                  </div>
+              </div>
+          </div>
+      </div>
+
+   <!-------------------------- End Header --------------------------->
+
+<!---------------------------      searching the book---------------------->
+      <form method="GET" action="{% url 'search_list' %}">
+      <div id="search" class="search">
+          <div class="container">
+              <div class="row">
+                  <h2 class="wow fadeInUp">Search Books</h2>
+                  <p class="wow fadeInUp" data-wow-delay="0.2s">Search your books here</p>
+
+                  <div class="col-lg-3 col-md-3">
+                    <div class="input-group input-group-lg wow fadeInUp" data-wow-delay="0.3s">
+                          <span class="input-group-addon" id-sizing-addon1><i class="fa fa-book" aria-hidden="true"></i></span>
+                          <input type="text" name="q1" required="" class="form-control" aria-describeby="sizing-addon1" placeholder="Name of book">
+                     </div>
+                  </div>
+
+
+                  <div class="col-lg-2 col-md-2">
+                    <div class="input-group input-group-lg wow fadeInUp" data-wow-delay="0.4s">
+                          <span class="input-group-addon" id-sizing-addon1><i class="fa fa-graduation-cap" aria-hidden="true"></i></span>
+<!--                          <input type="text" name="q1" class="form-control" aria-describeby="sizing-addon1" placeholder="class">-->
+                        <select class="form-control" required="" name = "q2">
+                            <option value="" disabled selected>Class</option>
+                            {% for i in class_count %}
+                             <option value = "{{i}}">{{i}}</option>
+                            {% endfor %}
+
+                        </select>
+                    </div>
+                  </div>
+
+
+                  <div class="col-lg-3">
+                    <div class="input-group input-group-lg wow fadeInUp" data-wow-delay="0.5s">
+                          <span class="input-group-addon" id-sizing-addon1><i class="fa fa-street-view" aria-hidden="true"></i></span>
+                          <input type="text" name="q3" required="" class="form-control" aria-describeby="sizing-addon1" placeholder="District">
+                    </div>
+                  </div>
+
+
+                  <div class="col-lg-2">
+                    <div class="input-group input-group-lg wow fadeInUp" data-wow-delay="0.7s">
+                          <span class="input-group-addon" id-sizing-addon1><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+<!--                          <input type="text" name="q2" class="form-control" aria-describeby="sizing-addon1" placeholder="ward no">-->
+                         <select class="form-control" required="" name = "q4">
+                            <option value="" disabled selected>Ward</option>
+                            {% for i in ward_count %}
+                             <option value = "{{i}}">{{i}}</option>
+                            {% endfor %}
+                         </select>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-2" >
+                       <button class="btn btn-lg wow fadeInUp" data-wow-delay="0.8s" type="submit"> Search</button>
+                  </div>
+
+
+
+
+              </div>
+          </div>
+      </div>
+
+
+
+
+
+      </form>
+
+<!---------------------------      End of searching the book---------------------->
+
+
+      <!------------------------- story1 ------------------------------------>
+
+      <div id="story1" class="story1">
+          <div class="container">
+              <div class="row">
+                  <div class="col-lg-6 col-md-6 ">
+                      <h1>Yes I want to help </h1>
+                       <p> A Book Donating platform could be a highly supportive step towards providing needy students pursue their dream of good education with rich study books. You could be the one to support and help them. Be Polite, let them use your resources and move on ! Happy Sharing :)  </p>
+                     <button class="btn btn-md btn-hollow"><a href="{% url 'register' %}">Register Now</a></button>
+                  </div>
+                  <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="0.3s" >
+                      <img src="{% static 'donate/images/vvv.png' %}" alt="Hamro Kitab">
+                  </div>
+              </div>
+          </div>
+      </div>
+
+   <!-------------------------- End story1 --------------------------->
+
+  <!---------------------Team changed to how much reached------------------------------------>
+
+      <div id="team" class="team">
+          <div class="container">
+              <div class="row">
+                  <h2 class="wow fadeInUp">join us</h2>
+                  <p class="wow fadeInUp" data-wow-delay="0.4s">We are getting even bigger</p>
+                  <div class="col-lg-4 col-md-4 wow fadeInLeft" data-wow-delay="0.6s">
+                      <img src="{% static 'donate/images/rrrr.png' %}" class="img-circle" alt="">
+                      <h4>{{total_users}}</h4>
+                      <b>Registered Users</b>
+                      <p>Join us today and help many students pursue their dreams</p>
+
+                  </div>
+                  <div class="col-lg-4 col-md-4 wow fadeInLeft" data-wow-delay="0.4s">
+                      <img src="{% static 'donate/images/rerl.png' %}" class="img-circle" alt="">
+                      <h4>{{total_books}} +</h4>
+                      <b>Books Donated </b>
+                      <p> We wish their wont be any students leaving their schooling just because of lack of text books</p>
+
+                  </div>
+                  <div class="col-lg-4 col-md-4 wow fadeInLeft" data-wow-delay="0.2s">
+                     <img src="{% static 'donate/images/llll.png' %}" class="img-circle" alt="">
+                      <h4>{{total_users}}</h4>
+                      <b>Students Benefited</b>
+                      <p>This number is increasing since you are helping a lots of students </p>
+
+                  </div>
+
+              </div>
+          </div>
+      </div>
+
+      <!---END TEAM--->
+
+    <!------------------------- under ------------------------------->
+
+
+     <div id="Featured_Hostels" class="c4n">
+         <div class="container">
+             <h1 class="wow fadeInUp"> project under</h1>
+             <div class="row">
+                 <div class="col-lg-4 col-md-4 wow fadeInLeft" data-wow-delay="0.5s"></div>
+
+                 <div class="col-lg-4 col-md-4 col-xs-12 wow fadeInLeft" data-wow-delay="0.7s">
+                      <img src="{% static 'donate/images/c4n_logo.png' %}" class="c4n_logo" alt="">
+
+                     <p>This work is licensed under a Creative Commons Attribution - ShareAlike 3.0 License</p>
+                 </div>
+                 <div class="col-lg-4 col-md-4 col-xs-12 wow fadeInLeft" data-wow-delay="0.9s"></div>
+
+             </div>
+         </div>
+     </div>
+
+
+     <!-------------------end   under------------------------------>
+
+{% endblock %}

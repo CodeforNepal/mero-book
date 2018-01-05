@@ -1,0 +1,113 @@
+{% extends 'donate/base.html' %}
+
+{% load staticfiles %}
+
+{% block baaki_css %}
+<link rel = "stylesheet" href=" {% static 'donate/css/book_detail.css' %}">
+{% endblock %}
+
+
+{% block body %}
+<!---------------------------      searching the book---------------------->
+      <form method="GET" action="{% url 'search_list' %}">
+      <div id="search" class="search">
+          <div class="container">
+              <div class="row">
+                  <h2 class="wow fadeInUp">Search Books</h2>
+                  <p class="wow fadeInUp" data-wow-delay="0.2s">Search your books here</p>
+
+                  <div class="col-lg-3 col-md-3">
+                    <div class="input-group input-group-lg wow fadeInUp" data-wow-delay="0.3s">
+                          <span class="input-group-addon" id-sizing-addon1><i class="fa fa-book" aria-hidden="true"></i></span>
+                          <input type="text" name="q1" required="" class="form-control" aria-describeby="sizing-addon1" placeholder="Name of book">
+                     </div>
+                  </div>
+
+
+                  <div class="col-lg-2 col-md-2">
+                    <div class="input-group input-group-lg wow fadeInUp" data-wow-delay="0.4s">
+                          <span class="input-group-addon" id-sizing-addon1><i class="fa fa-graduation-cap" aria-hidden="true"></i></span>
+<!--                          <input type="text" name="q1" class="form-control" aria-describeby="sizing-addon1" placeholder="class">-->
+                        <select class="form-control" required="" name = "q2">
+                            <option value="" disabled selected>class</option>
+                            {% for i in class_count %}
+                             <option value = "{{i}}">{{i}}</option>
+                            {% endfor %}
+
+                        </select>
+                    </div>
+                  </div>
+
+
+                  <div class="col-lg-3">
+                    <div class="input-group input-group-lg wow fadeInUp" data-wow-delay="0.5s">
+                          <span class="input-group-addon" id-sizing-addon1><i class="fa fa-street-view" aria-hidden="true"></i></span>
+                          <input type="text" name="q3" required="" class="form-control" aria-describeby="sizing-addon1" placeholder="District">
+                    </div>
+                  </div>
+
+
+                  <div class="col-lg-2">
+                    <div class="input-group input-group-lg wow fadeInUp" data-wow-delay="0.7s">
+                          <span class="input-group-addon" id-sizing-addon1><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+<!--                          <input type="text" name="q2" class="form-control" aria-describeby="sizing-addon1" placeholder="ward no">-->
+                         <select class="form-control" required="" name = "q4">
+                            <option value="" disabled selected>Ward</option>
+                            {% for i in ward_count %}
+                             <option value = "{{i}}">{{i}}</option>
+                            {% endfor %}
+                         </select>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-2" >
+                       <button class="btn btn-lg wow fadeInUp" data-wow-delay="0.8s" type="submit"> Search</button>
+                  </div>
+
+              </div>
+          </div>
+      </div>
+
+      </form>
+
+<!---------------------------      End of searching the book---------------------->
+
+
+   <!---------------      book ko detail---------------------------->
+
+      <div class="book_ko_detail">
+      <div class="container">
+
+
+          <div class="col-lg-3 col-md-3"></div>
+
+          <div class="border hvr-float col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="0.1s ">
+              <h4>{{instance.Name}} </h4>
+              <img class="id3h " src="{% static 'donate/images/rerl.png' %}">
+
+              <p><i class="fa fa-pencil-square-o" aria-hidden="true"></i> class :{{instance.Class}}</p>
+              <p> Publisher: {{instance.Publisher}}</p>
+              <p> Edition: {{instance.Edition}}</p><hr>
+              <p> <i class="fa fa-address-card" aria-hidden="true"></i>Contributor's Detail </p>
+              <p> Contributed by: {{instance.user.first_name}}</p>
+              <p> Email: {{instance.user.email}}</p>
+              <p> Address: {{instance.Your_District}}, {{instance.Ward_number}}</p> <hr>
+              <p><i class="fa fa-phone" aria hidden="true"></i> Ask for book @: <button class="btn btn-md ">{{instance.Phone_number}}</button></p><hr>
+              <p> Status:<i class="fa fa-check" aria hidden="true"></i> {{instance.Status}}</p><hr>
+
+         {% if instance.user.id == request.user.id %}
+              <p> Disclaimer: Once your book has been reserved by someone, <a href=' {% url "update" id=instance.id %} '>UPDATE</a> the status field to : <strong>Reserved</strong></p>
+         {% endif %}
+          </div>
+
+          <div class="col-lg-3 col-md-3"></div>
+
+     </div>
+
+
+      </div>
+
+
+<!---------------End  book ko detail---------------------------->
+
+{% endblock %}

@@ -1,0 +1,71 @@
+{% extends 'donate/base.html' %}
+
+{% load staticfiles %}
+
+{% block baaki_css %}
+<link rel = "stylesheet" href=" {% static 'donate/css/profile.css' %}">
+{% endblock %}
+
+
+{% block body %}
+<!------------------      text here-------------------------------->
+        <div  class="search_l">
+          <div class="container">
+             <div class="row">
+                 <div class="welcome"> <p> You are welcome,{{request.user}}</p></div>
+            </div>
+              <div class="row">
+                  <h2 class="wow fadeInUp"><i class="fa fa-ravelry" aria-hidden="true"></i>Your profile</h2>
+                  <p class="wow fadeInUp" data-wow-delay="0.4s">These are the books you donated </p>
+
+
+                    </div>
+                  </div>
+
+
+                    </div>
+
+<!------------------ End   text here-------------------------------->
+
+<!---------------      book ka list haru---------------------------->
+
+      <div class="hostel_ko_list">
+      <div class="container">
+
+{% for obj  in queryset_list %}
+
+          <div class="border hvr-float col-lg-3 col-md-3  wow fadeInUp" data-wow-delay="0.1s "> <a href=' {% url "book_detail" id=obj.id %} ' ><h4>{{obj.Name}} </h4><img class="id3h " src="{% static 'donate/images/fav.png' %}"></a><div class="eta"><p><i class="fa fa-pencil-square-o" aria-hidden="true"></i>{{obj.Edition}} Edition</p></div> <div class="uta" ><p><i class="fa fa-user" aria-hidden="true"></i> Class: {{obj.Class}} </p></div></div>
+
+{% endfor %}
+
+         {% if not queryset_list %}
+          <div class="no_book">
+          <p>Ohh ! You haven't donated book yet . The list seems empty !</p>
+          </div>
+          {% endif %}
+</div>
+            <!------------pagination ko lagi----------->
+<div class="pagin">
+    <span class="step-links">
+        {% if queryset_list.has_previous %}
+            <a href="?page=1">&laquo; first | </a>
+            <a href="?page={{ queryset_list.previous_page_number }}">previous</a>
+        {% endif %}
+
+        <span class="current">
+            Page {{ queryset_list.number }} of {{ queryset_list.paginator.num_pages }}.
+        </span>
+
+        {% if queryset_list.has_next %}
+            <a href="?page={{ queryset_list.next_page_number }}">next</a>
+            <a href="?page={{ queryset_list.paginator.num_pages }}">| last &raquo;</a>
+        {% endif %}
+    </span>
+</div>
+
+
+      </div>
+
+<!---------------End  book ka list haru---------------------------->
+
+{% endblock %}

@@ -1,0 +1,100 @@
+
+/*-----------------text before listing--------------------*/
+
+.welcome{
+    padding-top: 40px;
+    float: right;
+}
+.welcome p{
+    color: aqua;
+}
+
+.search_l {
+    background-image:url(../images/search_bgk.jpg);
+    padding: 30px 0 30px;
+    text-align: center;
+}
+
+.search_l p {
+    
+    padding-bottom: 30px;
+/*    color: #737373;*/
+    color: dimgray;
+}
+
+.search_l h2 {
+    
+    color: #4c4c4c;
+    margin: 40px 0 20px;
+}
+
+.search_l i {
+    
+    padding: 5px;
+    font-size: 50px;
+    border-radius: 50px;
+    color: pink;
+}
+
+
+/*-----------------End text before listing-----------------*/
+
+
+/*---------book list haru----------------------------*/
+
+.hostel_ko_list .border{
+    width: 275px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-left: 8px;
+    border-color:whitesmoke;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.hostel_ko_list h4{
+    text-align: center;
+    padding-top: 15px;
+    color: darkgray;
+    font-weight: bold;
+}
+
+.hostel_ko_list p{
+    margin-top: 1px;
+    color: darkgray;
+}
+.hostel_ko_list{
+    border: 20px;
+}
+.hostel_ko_list .eta{
+    float: left;
+/*    padding-left: 10px;*/
+    
+}
+.hostel_ko_list i{
+    font-size: 20px;
+    padding: 5px;
+    color: dimgrey;
+    
+}
+
+.hostel_ko_list .uta{
+    float: right;
+}
+
+.id3h{
+    width: 100%;
+    height: 200px;
+    margin-bottom: 10px;
+}
+
+.no_book{
+margin-top:10px;
+text-align: center;
+}
+/*-----------book ko list haru---------------------------*/
+
+/*------paginator haru--------*/
+.pagin{
+    margin: 20px 0;
+    text-align:center;
+}

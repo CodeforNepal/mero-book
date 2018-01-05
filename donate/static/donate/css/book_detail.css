@@ -1,0 +1,121 @@
+/*---------------search tab in the top ----------------*/
+
+.search {
+    background-image:url(../images/search_bgk.jpg);
+    text-align: center;
+    padding: 50px 0 30px;
+
+}
+
+.search p {
+    
+    padding-bottom: 20px;
+    color: #737373;
+    
+}
+
+.search h2 {
+    
+    color: #777;
+    margin: 20px 0 20px;
+}
+
+.search .input-group {
+    margin-top: 0px;
+    margin-bottom: 15px;
+}
+
+.search .form-control {
+    
+    border-radius: 0 !important;
+}
+
+.search .span {
+    
+    border-radius: 0 !important;
+}
+
+.search .btn {
+    margin-top: 0px;
+    padding-left:0px;
+    border-radius: 0;
+/*    width: 100%;*/
+    width: 130px;
+    font-size: 15px;
+    background-color: #f08080;
+    color: #fff;
+}
+
+.search .btn:hover {
+    
+    background-color: #a85959 !important; 
+    color: #fff !important;
+}
+
+/*---------------End search tab in the top ----------------*/
+
+/*---------book detail ko----------------------------*/
+
+.book_ko_detail .border{
+    height: 750px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border-color:whitesmoke;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.book_ko_detail h4{
+    text-align: center;
+    padding-top: 15px;
+    color: burlywood;
+
+    font-weight: bold;
+}
+
+.book_ko_detail img {
+    display: block;
+    margin: 0 auto;
+}
+.id3h{
+    width: 200px;
+    margin-left: 150px;
+    height: 200px;
+    margin-bottom: 0px;
+}
+.book_ko_detail p{
+    margin-top: 0px;
+    color: darkgray;
+    text-align: center;
+}
+.book_ko_detail{
+    border: 20px;
+}
+.book_ko_detail .eta{
+    float: left;
+/*    padding-left: 10px;*/
+    
+}
+
+.book_ko_detail .btn{
+    background-color: burlywood;
+     color: #fff;
+
+
+}
+
+.book_ko_detail i{
+    font-size: 15px;
+    padding: 5px;
+/*    color: dimgrey;*/
+    color: burlywood;
+    
+}
+
+.book_ko_detail .uta{
+    float: right;
+    padding-right: 20px;
+}
+
+
+/*-----------End book detail ko---------------------------*/
+

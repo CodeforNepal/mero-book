@@ -1,0 +1,143 @@
+/*------------mathi ko text-----------------*/
+.mathi {
+/*    background-image:url(../images/search_bgk.jpg);*/
+    text-align: center;
+    padding: 50px 0 30px;
+
+}
+
+.mathi p {
+    
+    padding-bottom: 20px;
+    color: #737373;
+    
+}
+
+.mathi h2 {
+    
+    color: #777;
+    margin: 20px 0 20px;
+}
+
+
+/*---------book detail ko box----------------------------*/
+
+
+.book_ko_detail{
+    background-color: #f7faff;
+/*    background-image: url(../images/brandon-morgan-15365.jpg);*/
+}
+.book_ko_detail .border{
+    height: 650px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border-color:whitesmoke;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.book_ko_detail h4{
+    text-align: center;
+    padding-top: 15px;
+    color: burlywood;
+
+    font-weight: bold;
+}
+
+.book_ko_detail img {
+    display: block;
+    margin: 0 auto;
+}
+
+.book_ko_detail p{
+    margin-top: 0px;
+    color: darkgray;
+    text-align: center;
+}
+.book_ko_detail{
+    border: 20px;
+}
+
+
+.book_ko_detail .btn{
+    background-color: burlywood;
+     color: #fff;
+
+
+}
+
+.book_ko_detail i{
+    font-size: 15px;
+    padding: 5px;
+/*    color: dimgrey;*/
+    color: burlywood;
+    
+}
+
+
+
+/*-----------End book detail ko box---------------------------*/
+
+
+.ggg{
+    margin-top: 5px;
+}
+
+/*---------------Details wala form ----------------*/
+
+
+/*.fill is actually filling the form*/
+
+
+.fill {
+    text-align: center;
+    padding: 50px 0 30px;
+
+}
+
+.fill p {
+    
+    padding-bottom: 20px;
+    color: #737373;
+    
+}
+
+.fill h2 {
+    
+    color: #777;
+    margin: 20px 0 20px;
+}
+
+.fill .input-group {
+    margin-top: 0px;
+    margin-bottom: 15px;
+}
+
+.fill .form-control {
+    
+    border-radius: 0 !important;
+}
+
+.fill .span {
+    
+    border-radius: 0 !important;
+}
+
+.fill .btn {
+    margin-top: 0px;
+    padding-left:0px;
+    border-radius: 0;
+/*    width: 100%;*/
+    width: 130px;
+    font-size: 15px;
+    background-color: #f08080;
+    color: #fff;
+}
+
+.fill .btn:hover {
+    
+    background-color: #a85959 !important; 
+    color: #fff !important;
+}
+
+
+/*---------------search tab in the top ----------------*/
