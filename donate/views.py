@@ -191,3 +191,4 @@ def contact_us(request):
 
 def success(request):
     return render(request, 'donate/success.html')
+
