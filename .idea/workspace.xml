@@ -2,13 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8663b08d-0906-43e0-b490-0eefff82a78d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/donate/templates/donate/book_detail.html" afterPath="$PROJECT_DIR$/donate/templates/donate/book_detail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/donate/templates/donate/donate_book.html" afterPath="$PROJECT_DIR$/donate/templates/donate/donate_book.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/donate/templates/donate/index.html" afterPath="$PROJECT_DIR$/donate/templates/donate/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/donate/templates/donate/success.html" afterPath="$PROJECT_DIR$/donate/templates/donate/success.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/donate/views.py" afterPath="$PROJECT_DIR$/donate/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hamrokitab/settings.py" afterPath="$PROJECT_DIR$/hamrokitab/settings.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
