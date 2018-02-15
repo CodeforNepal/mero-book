@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8663b08d-0906-43e0-b490-0eefff82a78d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hamrokitab/settings.py" afterPath="$PROJECT_DIR$/hamrokitab/settings.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/donate/templates/donate/index.html" afterPath="$PROJECT_DIR$/donate/templates/donate/index.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -14,11 +14,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hamrokitab/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="34" column="0" lean-forward="true" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+            <state relative-caret-position="255">
+              <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -78,11 +78,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/donate/templates/donate/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="59" column="24" lean-forward="true" selection-start-line="59" selection-start-column="24" selection-end-line="64" selection-end-column="33" />
+            <state relative-caret-position="124">
+              <caret line="170" column="0" lean-forward="true" selection-start-line="170" selection-start-column="0" selection-end-line="170" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -103,11 +103,11 @@
         <option value="$PROJECT_DIR$/donate/static/donate/css/stylesheet.css" />
         <option value="$PROJECT_DIR$/donate/templates/donate/base.html" />
         <option value="$PROJECT_DIR$/donate/templates/donate/donate_book.html" />
-        <option value="$PROJECT_DIR$/donate/templates/donate/index.html" />
         <option value="$PROJECT_DIR$/donate/views.py" />
         <option value="$PROJECT_DIR$/donate/templates/donate/book_detail.html" />
         <option value="$PROJECT_DIR$/donate/templates/donate/success.html" />
         <option value="$PROJECT_DIR$/hamrokitab/settings.py" />
+        <option value="$PROJECT_DIR$/donate/templates/donate/index.html" />
       </list>
     </option>
   </component>
@@ -566,14 +566,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/donate/templates/donate/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="59" column="24" lean-forward="true" selection-start-line="59" selection-start-column="24" selection-end-line="64" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/donate/templates/donate/book_detail.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -592,8 +584,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/hamrokitab/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="34" column="0" lean-forward="true" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+        <state relative-caret-position="255">
+          <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/donate/templates/donate/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="170" column="0" lean-forward="true" selection-start-line="170" selection-start-column="0" selection-end-line="170" selection-end-column="0" />
           <folding />
         </state>
       </provider>
