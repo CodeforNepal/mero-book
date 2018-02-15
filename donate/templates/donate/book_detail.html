@@ -42,7 +42,12 @@
                   <div class="col-lg-3">
                     <div class="input-group input-group-lg wow fadeInUp" data-wow-delay="0.5s">
                           <span class="input-group-addon" id-sizing-addon1><i class="fa fa-street-view" aria-hidden="true"></i></span>
-                          <input type="text" name="q3" required="" class="form-control" aria-describeby="sizing-addon1" placeholder="District">
+                          <select class="form-control" required="" name = "q3">
+                           <option value="" disabled selected>District</option>
+                           {% for i in district_count %}
+                            <option value = "{{i}}">{{i}}</option>
+                           {% endfor %}
+                        </select>
                     </div>
                   </div>
 

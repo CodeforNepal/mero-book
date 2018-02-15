@@ -30,7 +30,7 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'o)6a%&)zaco+z_qm#9m^@58_%7ov04
 # DEBUG = True
 DEBUG = bool( os.environ.get('DJANGO_DEBUG', True) )
 
-ALLOWED_HOSTS = ['whispering-beyond-38150.herokuapp.com', 'www.merobook.org', '127.0.0.1']
+ALLOWED_HOSTS = ['whispering-beyond-38150.herokuapp.com', 'merobook.org', '127.0.0.1']
 
 
 # Application definition

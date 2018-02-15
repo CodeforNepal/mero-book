@@ -115,11 +115,21 @@
                     </div>
               <div class="input-group input-group-lg " >
                           <span class="input-group-addon" id-sizing-addon1><i class="fa fa-street-view" aria-hidden="true"></i></span>
-                          <input type="text" name="Your_District" class="form-control" aria-describeby="sizing-addon1" required="" placeholder="District"
-                                 {% if form.Your_District.value %}
-                                   value="{{form.Your_District.value}}"
-                                {% endif %}
-                                 >
+                          <select class="form-control" required="" name = "Your_District">
+                            <option value="" disabled selected>District</option>
+
+                           {% for i in district_count %}
+                            <option value="{{i}}"
+                                    {% if form.Your_District.value == i %}
+                                    selected
+                                    {% endif %}
+                            >{{i}}</option>
+                            {% endfor %}
+
+
+                        </select>
+
+
 
                     </div>
                         <div class="input-group input-group-lg ">
