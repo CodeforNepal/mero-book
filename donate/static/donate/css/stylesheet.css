@@ -1,6 +1,6 @@
 /*-------sabai default css for the rest of the index-----------*/
 * {
-    
+
     padding:0;
     margin: 0;
 }
@@ -13,20 +13,20 @@ body{
 }
 
 li{
-    
+
     list-style: none;
     display: inline-block
 }
 
 a {
-    
+
     text-decoration: none;
     transition: all 500ms ease-in-out;
 }
 
 a:hover,
 a:active {
-    
+
         text-decoration: none;
 }
 
@@ -44,14 +44,14 @@ p {
 }
 
 .btn {
-    
+
     transition: all 300ms ease-in-out;
     font-weight: 500 !important;
     text-transform: uppercase;
 }
 
 .btn:hover {
-     
+
     background-color:  #ededed !important;
     color: #3c3c3c !important;
     border: 1px solid #fff !important;
@@ -62,23 +62,23 @@ p {
 
 
 .navbar {
-    
-    background-color: #222222 !important;
+
+    background-color: #fcfbfb !important;
     text-transform: uppercase;
     font-family: 'PT Sans Narrow', Arial, sans-serif;
 /*    font-weight: 700;*/
 }
 
 .navbar a {
-    
-    color: #fff !important;
+
+    color: #000 !important;
 /*    opacity: 0.7;*/
 }
 
 
 .navbar a:hover {
-    
-    color: red !important;
+
+    color: #fff !important;
     opacity: 1;
     background-color: #111111 !important;
 }
@@ -91,7 +91,7 @@ p {
 /*-------------------------Header------------------*/
 
 .header{
-    
+
     height: 650px;
     width: 100%;
     padding: 100px 0 30px;
@@ -107,7 +107,7 @@ p {
 color: white;
 }
 .header img{
-    
+
     height: 350px;
     width: 350px;
 /*    margin: 40px 0 0 20px;*/
@@ -116,7 +116,7 @@ color: white;
 }
 
 .header h1 {
-    
+
     font-size: 40px;
     font-weight: 700;
     padding-top: 60px;
@@ -125,46 +125,46 @@ color: white;
 .header h1,
 .header p,
 .header button {
-    
+
     margin-top: 30px;
     text-align: justify;
 }
 
 .header .btn {
-    
+
 /*    border-radius: 0;*/
     margin: 40px 20px;
 }
 
 
 @media(max-width:768px) {
-    
+
     .header {
-        
+
         padding: 30px;
         height: 750px;
     }
-    
+
     .header img {
-         
+
         width: 90%;
         height: 300px;
         margin: 20px 0 0 20px;
     }
-    
+
     .header .btn {
-        
+
         font-size: 15px;
         margin-left: 20px;
     }
-    
+
     .header h1 {
-        
+
         font-size: 20px;
     }
-    
+
     .header p {
-        
+
         font-size: 15px;
     }
 }
@@ -178,30 +178,30 @@ color: white;
 }
 
 .search p {
-    
+
     padding-bottom: 80px;
     color: #737373;
-    
+
 }
 
 .search h2 {
-    
+
     color: #777;
     margin: 20px 0 20px;
 }
 
 .search .input-group {
-    
+
     margin-bottom: 25px;
 }
 
 .search .form-control {
-    
+
     border-radius: 0 !important;
 }
 
 .search .span {
-    
+
     border-radius: 0 !important;
 }
 
@@ -216,8 +216,8 @@ color: white;
 }
 
 .search .btn:hover {
-    
-    background-color: #a85959 !important; 
+
+    background-color: #a85959 !important;
     color: #fff !important;
 }
 
@@ -225,7 +225,7 @@ color: white;
 /*-------------------------story1------------------*/
 
 .story1{
-    
+
     height: 600px;
     width: 100%;
     padding: 100px 0 30px;
@@ -239,7 +239,7 @@ color: white;
 
 
 .story1 img{
-    
+
     height: 400px;
     width: 600px;
     margin-right: 10px;
@@ -247,7 +247,7 @@ color: white;
 }
 
 .story1 h1 {
-    
+
     font-size: 40px;
     font-weight: 500;
     color: darkgray;
@@ -257,7 +257,7 @@ color: white;
 
 .story1 p,
 .story1 button {
-    
+
     margin-top: 30px;
     margin-top: 30px;
     color: #777;
@@ -270,40 +270,40 @@ color: white;
 }
 
 .story1 .btn {
-    
+
 /*    border-radius: 0;*/
     margin: 40px 20px;
 }
 
 
 @media(max-width:768px) {
-    
+
     .story1 {
-        
+
         padding: 30px;
         height: 750px;
     }
-    
+
     .story1 img {
-         
+
         width: 90%;
         height: 300px;
         margin: 20px 0 0 20px;
     }
-    
+
     .story1 .btn {
-        
+
         font-size: 15px;
         margin-left: 20px;
     }
-    
+
     .story1 h1 {
-        
+
         font-size: 20px;
     }
-    
+
     .story1 p {
-        
+
         font-size: 15px;
     }
 }
@@ -317,8 +317,8 @@ color: white;
     background-color:#f4f7fc;
     padding: 50px 0 80px;
     text-align: center;
-    
-    
+
+
 }
 
 .team b,
@@ -336,14 +336,14 @@ color: white;
 }
 
 .team img {
-     
+
     height: 150px;
     width: 150px;
     margin-top: 80px;
 }
 
 .team i {
-    
+
     height: 30px;
     width: 30px;
     padding: 5px;
@@ -354,7 +354,7 @@ color: white;
 }
 
 .team a:hover i {
-    
+
     background-color: #709963;
 }
 
@@ -419,11 +419,11 @@ color: white;
 /*---------------- FOOTER -----------------------*/
 
 .footer {
-    
+
     padding: 30px;
-    color: #cccccc;
+    color: #000000;
     text-align:center;
-    background-color: #222222;
+    background-color: #fcfbfb;
 }
 .footer h4{
         color: red;
@@ -432,7 +432,7 @@ color: white;
 }
 
 .footer .social {
-    
+
     font-size: 20px;
     height: 30px;
     width: 30px;
@@ -446,7 +446,7 @@ color: white;
 
 
 .footer input {
-    
+
     height: 40px;
     width: 220px;
     padding: 5px;
@@ -462,4 +462,8 @@ color: white;
     padding: 10px 5px 10px;
     margin: -3px 0 0 5px;
     color:white;
+}
+
+.fa-github {
+  color: #000 !important;
 }
