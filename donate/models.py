@@ -2,7 +2,7 @@ from django.db import models
 from django.conf import settings
 from django.contrib.auth.models import User
 from django.core.validators import MaxValueValidator, MinValueValidator
-from django.core.urlresolvers import reverse
+from django.urls import reverse
 
 ST_CHOICES = (
         ('Open', 'Open'),
@@ -23,7 +23,7 @@ EDITION_CHOICES=(
 )
 
 class Details(models.Model):
-    user= models.ForeignKey(settings.AUTH_USER_MODEL, null=True)
+    user= models.ForeignKey(settings.AUTH_USER_MODEL, null=True, on_delete= models.CASCADE)
     Name = models.CharField(max_length=200)
     Class= models.IntegerField(validators=[MaxValueValidator(13), MinValueValidator(1)])
     Publisher= models.CharField(max_length=200)

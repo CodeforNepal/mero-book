@@ -26,6 +26,7 @@ pyparsing==2.2.0
 pyqtgraph==0.10.0
 PyScreeze==0.1.13
 python-dateutil==2.6.1
+python-decouple==3.4
 PyTweening==1.0.3
 pytz==2017.3
 PyYAML==3.12
