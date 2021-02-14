@@ -27,3 +27,6 @@ __pycache__
 #environment files
 .env
 venv/
+
+# local DB file
+db.sqlite3
