@@ -12,6 +12,9 @@ https://docs.djangoproject.com/en/1.11/ref/settings/
 
 import os
 
+from decouple import config, Csv
+
+
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -20,18 +23,14 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-# SECRET_KEY = 'o)6a%&)zaco+z_qm#9m^@58_%7ov04ax6fx5$9fal7x-4=fk^g'
 
-SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'o)6a%&)zaco+z_qm#9m^@58_%7ov04ax6fx5$9fal7x-4=fk^g')
+SECRET_KEY = config('SECRET_KEY')
+
+DEBUG = config('DEBUG', cast=bool)
 
 
-
-# SECURITY WARNING: don't run with debug turned on in production!
-# DEBUG = True
-DEBUG = bool( os.environ.get('DJANGO_DEBUG', True) )
-
-ALLOWED_HOSTS = ['whispering-beyond-38150.herokuapp.com', 'www.merobook.org', '127.0.0.1']
-
+# ALLOWED_HOSTS = config('ALLOWED_HOSTS', cast=Csv())
+ALLOWED_HOSTS = config('ALLOWED_HOSTS')
 
 # Application definition
 
@@ -147,12 +146,11 @@ STATIC_URL = '/static/'
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 
-EMAIL_HOST = 'server6.websnp.com'
-EMAIL_PORT = 587
-EMAIL_HOST_USER = 'ashwin@techunboxin.com'
-EMAIL_HOST_PASSWORD = '%%%this is what i c0ll ridiculous maN_N'
-EMAIL_USE_TLS = True
-
+EMAIL_HOST = config('EMAIL_HOST')
+EMAIL_PORT = config('EMAIL_PORT')
+EMAIL_HOST_USER = config('EMAIL_HOST_USER')
+EMAIL_HOST_PASSWORD = config('EMAIL_HOST_PASSWORD')
+EMAIL_USE_TLS = config('DEBUG', cast=bool)
 
 # Heroku: Update database configuration from $DATABASE_URL.
 import dj_database_url
